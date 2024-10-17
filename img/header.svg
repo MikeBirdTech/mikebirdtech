@@ -1,0 +1,73 @@
+<svg fill="none" viewBox="0 0 800 100" width="800" height="100" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+                    width: 100%;
+                    height: 100px;
+                    background-color: #0D1117;
+                    border-radius: 10px;
+                    color: #16C60C;
+                    font-family: monospace;
+                    text-align: center;
+                }
+                .terminal-header {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px;
+                    width: 100%;
+                    background-color: #161B22;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+                .terminal-circle {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    margin-right: 6px;
+                }
+                .terminal-circle-red {
+                    background-color: #FF5F56;
+                }
+                .terminal-circle-yellow {
+                    background-color: #FFBD2E;
+                }
+                .terminal-circle-green {
+                    background-color: #27C93F;
+                }
+                .cursor {
+                    background-color: #16C60C;
+                    animation: blink 1s step-start infinite;
+                }
+                @keyframes blink {
+                    50% { opacity: 0; }
+                }
+                .typing {
+                    animation: type 3s steps(19);
+                    overflow: hidden;
+                    white-space: nowrap;
+                    border-right: 3px solid #16C60C;
+                    width: 19ch;
+                }
+                @keyframes type {
+                    0% { width: 0; }
+                }
+            </style>
+            <div class="container">
+                <div class="terminal-header">
+                    <div class="terminal-circle terminal-circle-red"></div>
+                    <div class="terminal-circle terminal-circle-yellow"></div>
+                    <div class="terminal-circle terminal-circle-green"></div>
+                </div>
+                <div style="font-size: 26px; margin-top: 10px;">
+                    <span class="typing">Mike Bird Tech</span><span class="cursor">_</span>
+                </div>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
