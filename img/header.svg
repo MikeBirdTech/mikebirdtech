@@ -47,7 +47,6 @@
                     background-color: #16C60C;
                     vertical-align: bottom;
                     animation: cursor-blink 1s steps(1) 3 forwards;
-                    animation-fill-mode: forwards;
                 }
                 @keyframes cursor-blink {
                     0%, 50% { opacity: 1; }
@@ -55,7 +54,7 @@
                     100% { opacity: 0; }
                 }
                 .typing {
-                    animation: typing 1.3s steps(13) forwards;
+                    animation: typing 1.4s steps(14) forwards;
                     animation-delay: 3s;
                     animation-fill-mode: forwards;
                     overflow: hidden;
@@ -66,7 +65,7 @@
                 }
                 @keyframes typing {
                     from { width: 0ch; }
-                    to { width: 13ch; }
+                    to { width: 14ch; }
                 }
                 .typing::after {
                     content: '';
@@ -76,8 +75,7 @@
                     background-color: #16C60C;
                     vertical-align: bottom;
                     animation: blink 1s steps(1) infinite;
-                    animation-delay: 4.3s;
-                    animation-fill-mode: forwards;
+                    animation-delay: 4.4s;
                 }
                 @keyframes blink {
                     0%, 50% { opacity: 1; }
